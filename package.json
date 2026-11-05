@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check": "node --check app.js && node --check candidate-profile.js && node --check wilayah-address.js && node --check server.js",
+    "check:security": "npm run check && npm audit --omit=dev --audit-level=low",
+    "test:staging": "node staging-rls-test.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
+    "express": "^5.3.0"
+  },
+  "name": "publish",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
